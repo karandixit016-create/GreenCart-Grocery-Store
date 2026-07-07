@@ -1,14 +1,14 @@
+import { lazy} from "react";
+
 import {Toaster} from 'react-hot-toast'
 import {Route,Routes} from 'react-router-dom'
-import Login from './pages/Login'
-import Home from './pages/Home'
-import AppLayout from './pages/AppLayout'
-import Productpage from './pages/Productpage'
-import Flashdeal from './pages/Flashdeal'
-
-import MyOrder from './pages/MyOrder'
-import ProtectedRoute from './components/ProtectedRoute'
-import Products from './pages/Products'
+const Login = lazy(() => import("./pages/Login"));
+const Home = lazy(() => import("./pages/Home"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
+const Productpage = lazy(() => import("./pages/Productpage"));
+const Flashdeal = lazy(() => import("./pages/Flashdeal"));
+const MyOrder = lazy(() => import("./pages/MyOrder"));
+const Products = lazy(() => import("./pages/Products"));
 
 const App = () => {
   return (
@@ -18,15 +18,15 @@ const App = () => {
       <Routes>
              {/* { Auth pages - no navbar/footer  } */}
              <Route path = "/login" element={<Login />}/>
+             
              {/* main-pages with Navbar and footer  */}
              <Route path = "/" element ={<AppLayout />}>
                 <Route index element={<Home />} />
                 <Route path ="/products" element={<Products />} />
                 <Route path ="/products/:id" element={<Productpage />} />
                 <Route path ="/deals" element={<Flashdeal />} />
-                <Route element={< ProtectedRoute />}>
-                  <Route path ="/myorder" element={<MyOrder />} />
-                </Route>
+                
+                <Route path ="/myorder" element={<MyOrder />} />
 
              </Route>
 
