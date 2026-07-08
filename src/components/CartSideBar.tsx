@@ -92,7 +92,7 @@ import { useCart } from "../context/CartContext";
                    <span className="font-medium">{deliveryFee === 0 ? <span className="text-app-success">Free</span> : `${currency}${deliveryFee.toFixed(2)}`}</span>
                 </div>
                 
-                {deliveryFee > 0 && <p className="text-xs text-app-text-light text-light">Free delivery on order over ₹99!</p>}
+                {deliveryFee > 0 && <p className="text-xs text-app-text-light text-light">Free delivery on order over {currency} 99</p>}
 
                 <div className="flex justify-between text-base font-semibold border-t border-app-border pt-3">
                   <span>Total</span>
