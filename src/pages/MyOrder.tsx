@@ -7,7 +7,7 @@ import Loading from "../components/Loading";
 import { CalendarIcon, ChevronRightIcon, PackageIcon } from "lucide-react";
 
 const Myorder = () => {
-  const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "$" ;
+  const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "₹" ;
 
   const [order , setOrder] = useState<Order[]>([])
   const [loading , setLoading] = useState(true)

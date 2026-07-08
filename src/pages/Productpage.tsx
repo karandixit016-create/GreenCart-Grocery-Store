@@ -11,7 +11,7 @@ import ProductCard from "../components/Home.tsx/ProductCard";
 
 const ProductPage = () => {
 
-  const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "$";
+  const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "₹";
 
   const { id } = useParams()
   const navigate = useNavigate()

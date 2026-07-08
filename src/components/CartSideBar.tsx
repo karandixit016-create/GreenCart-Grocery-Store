@@ -6,7 +6,7 @@ import { useCart } from "../context/CartContext";
 
   const CartSideBar = () => {
 
-    const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "$";
+    const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "₹";
 
     const {items, updateQuantity, removeFromCart ,cartTotal ,isCartOpen, setIsCartOpen}= useCart()
 
