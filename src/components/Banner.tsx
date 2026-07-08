@@ -21,7 +21,7 @@ sessionStorage.setItem('banner_dismissed', 'true')
             <div className="max-w-6xl mx-auto px-4 sm:px-5 lg:px-8  flex items-center justify-center gap-4">
                <div className="flex items-center gap-2">
                 <TruckIcon className="size-4 shrink-0"/>
-                <span className=" font-medium ">Free delivery on orders over $25</span>
+                <span className=" font-medium ">Free delivery on orders over ₹99</span>
                </div>
                 <span className="hidden md:inline text-white/40">|</span>
                 <div className="hidden sm:flex items-center gap-3">
