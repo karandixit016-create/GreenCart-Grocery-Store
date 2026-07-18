@@ -5,11 +5,7 @@ import { useCart } from "../context/CartContext";
 
   const Navbar = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const user: any = {
-    name : "Karan Dixit",
-    email : "Karan280@gmail.com",
-    isAdmin : true
-  }
+  const user: any = null;
   
   const { cartCount, setIsCartOpen } = useCart()
     
